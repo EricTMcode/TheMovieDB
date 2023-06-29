@@ -27,6 +27,7 @@
 		07A8B87F2A4C715400436696 /* movie_similar.json in Resources */ = {isa = PBXBuildFile; fileRef = 07A8B87A2A4C715400436696 /* movie_similar.json */; };
 		07A8B8802A4C715400436696 /* movie_person.json in Resources */ = {isa = PBXBuildFile; fileRef = 07A8B87B2A4C715400436696 /* movie_person.json */; };
 		07A8B8842A4C71D200436696 /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8B8832A4C71D200436696 /* RectangleView.swift */; };
+		07A8B8862A4C749700436696 /* PosterCaroussel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8B8852A4C749700436696 /* PosterCaroussel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		07A8B87A2A4C715400436696 /* movie_similar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movie_similar.json; sourceTree = "<group>"; };
 		07A8B87B2A4C715400436696 /* movie_person.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movie_person.json; sourceTree = "<group>"; };
 		07A8B8832A4C71D200436696 /* RectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
+		07A8B8852A4C749700436696 /* PosterCaroussel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterCaroussel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				07A8B8712A4C70BE00436696 /* PosterCard.swift */,
+				07A8B8852A4C749700436696 /* PosterCaroussel.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				07A8B85A2A4C66CF00436696 /* MovieResponse.swift in Sources */,
 				07A8B84C2A4C663200436696 /* ContentView.swift in Sources */,
 				07A8B86B2A4C6C4D00436696 /* MovieListViewModel.swift in Sources */,
+				07A8B8862A4C749700436696 /* PosterCaroussel.swift in Sources */,
 				07A8B85C2A4C66FA00436696 /* Movie.swift in Sources */,
 				07A8B8602A4C676B00436696 /* APIError.swift in Sources */,
 				07A8B8752A4C711000436696 /* Bundle+Extension.swift in Sources */,
