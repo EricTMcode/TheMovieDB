@@ -1,5 +1,5 @@
 //
-//  PosterCaroussel.swift
+//  PosterCarousselView.swift
 //  TheMovieDB
 //
 //  Created by Eric on 28/06/2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PosterCaroussel: View {
+struct PosterCarousselView: View {
     let title: String
     let movies: [Movie]
     
@@ -44,6 +44,6 @@ struct PosterCaroussel: View {
 
 struct PosterCaroussel_Previews: PreviewProvider {
     static var previews: some View {
-        PosterCaroussel(title: "Movie of the day", movies: Movie.localMovies)
+        PosterCarousselView(title: "Movie of the day", movies: Movie.localMovies)
     }
 }

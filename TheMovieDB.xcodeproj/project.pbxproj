@@ -27,8 +27,9 @@
 		07A8B87F2A4C715400436696 /* movie_similar.json in Resources */ = {isa = PBXBuildFile; fileRef = 07A8B87A2A4C715400436696 /* movie_similar.json */; };
 		07A8B8802A4C715400436696 /* movie_person.json in Resources */ = {isa = PBXBuildFile; fileRef = 07A8B87B2A4C715400436696 /* movie_person.json */; };
 		07A8B8842A4C71D200436696 /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8B8832A4C71D200436696 /* RectangleView.swift */; };
-		07A8B8862A4C749700436696 /* PosterCaroussel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8B8852A4C749700436696 /* PosterCaroussel.swift */; };
+		07A8B8862A4C749700436696 /* PosterCarousselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8B8852A4C749700436696 /* PosterCarousselView.swift */; };
 		07A8B8882A4EF6D000436696 /* BackdropCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8B8872A4EF6D000436696 /* BackdropCard.swift */; };
+		07A8B88A2A4EF89000436696 /* BackdropCraouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8B8892A4EF89000436696 /* BackdropCraouselView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,8 +54,9 @@
 		07A8B87A2A4C715400436696 /* movie_similar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movie_similar.json; sourceTree = "<group>"; };
 		07A8B87B2A4C715400436696 /* movie_person.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movie_person.json; sourceTree = "<group>"; };
 		07A8B8832A4C71D200436696 /* RectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
-		07A8B8852A4C749700436696 /* PosterCaroussel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterCaroussel.swift; sourceTree = "<group>"; };
+		07A8B8852A4C749700436696 /* PosterCarousselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterCarousselView.swift; sourceTree = "<group>"; };
 		07A8B8872A4EF6D000436696 /* BackdropCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackdropCard.swift; sourceTree = "<group>"; };
+		07A8B8892A4EF89000436696 /* BackdropCraouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackdropCraouselView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +92,6 @@
 				07A8B8662A4C6C2400436696 /* Feature */,
 				07A8B85D2A4C673100436696 /* Base */,
 				07A8B8762A4C714300436696 /* Json */,
-				07A8B8492A4C663200436696 /* TheMovieDBApp.swift */,
-				07A8B84B2A4C663200436696 /* ContentView.swift */,
 				07A8B84D2A4C663300436696 /* Assets.xcassets */,
 				07A8B84F2A4C663300436696 /* Preview Content */,
 			);
@@ -156,6 +156,7 @@
 		07A8B8672A4C6C2700436696 /* MovieList */ = {
 			isa = PBXGroup;
 			children = (
+				07A8B8492A4C663200436696 /* TheMovieDBApp.swift */,
 				07A8B8692A4C6C3C00436696 /* View */,
 				07A8B8702A4C70AB00436696 /* Components */,
 				07A8B8682A4C6C3000436696 /* ViewModel */,
@@ -174,6 +175,7 @@
 		07A8B8692A4C6C3C00436696 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				07A8B84B2A4C663200436696 /* ContentView.swift */,
 				07A8B86E2A4C6DD100436696 /* MovieListView.swift */,
 			);
 			path = View;
@@ -182,8 +184,9 @@
 		07A8B8702A4C70AB00436696 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				07A8B8852A4C749700436696 /* PosterCaroussel.swift */,
+				07A8B8852A4C749700436696 /* PosterCarousselView.swift */,
 				07A8B8712A4C70BE00436696 /* PosterCard.swift */,
+				07A8B8892A4EF89000436696 /* BackdropCraouselView.swift */,
 				07A8B8872A4EF6D000436696 /* BackdropCard.swift */,
 			);
 			path = Components;
@@ -297,8 +300,9 @@
 				07A8B86D2A4C6D2400436696 /* Endpoint.swift in Sources */,
 				07A8B85A2A4C66CF00436696 /* MovieResponse.swift in Sources */,
 				07A8B84C2A4C663200436696 /* ContentView.swift in Sources */,
+				07A8B88A2A4EF89000436696 /* BackdropCraouselView.swift in Sources */,
 				07A8B86B2A4C6C4D00436696 /* MovieListViewModel.swift in Sources */,
-				07A8B8862A4C749700436696 /* PosterCaroussel.swift in Sources */,
+				07A8B8862A4C749700436696 /* PosterCarousselView.swift in Sources */,
 				07A8B85C2A4C66FA00436696 /* Movie.swift in Sources */,
 				07A8B8602A4C676B00436696 /* APIError.swift in Sources */,
 				07A8B8752A4C711000436696 /* Bundle+Extension.swift in Sources */,

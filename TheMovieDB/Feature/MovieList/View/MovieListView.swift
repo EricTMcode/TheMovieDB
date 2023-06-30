@@ -14,12 +14,14 @@ struct MovieListView: View {
         NavigationStack {
             ScrollView(showsIndicators: false) {
                 VStack(alignment: .leading, spacing: 10) {
-                    PosterCaroussel(title: "Movie of the day", movies: vm.nowPlaying)
-                    PosterCaroussel(title: "Recently added", movies: vm.upcoming)
-                    PosterCaroussel(title: "Top Rated Movie", movies: vm.topRated)
+                    BackdropCraouselView(movies: vm.popular)
+                    PosterCarousselView(title: "Movie of the day", movies: vm.nowPlaying)
+                    PosterCarousselView(title: "Recently added", movies: vm.upcoming)
+                    PosterCarousselView(title: "Top Rated Movie", movies: vm.topRated)
                 }
-                .padding(.top, 60)
+                .padding(.top)
             }
+            .navigationTitle("Welcome")
             .task {
                 if !vm.hasAppeared {
                     await populateMovies()
@@ -61,6 +63,7 @@ struct MovieListView: View {
         await vm.fetchNowPlaying(from: .nowPlaying)
         await vm.fetchUpcoming(from: .upcoming)
         await vm.fetchTopRated(from: .topRated)
+        await vm.fetchPopular(from: .popular)
     }
 }
 

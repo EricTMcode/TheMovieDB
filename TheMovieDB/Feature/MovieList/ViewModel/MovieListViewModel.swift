@@ -14,6 +14,7 @@ class MovieListViewModel: ObservableObject {
     @Published var nowPlaying = [Movie]()
     @Published var upcoming = [Movie]()
     @Published var topRated = [Movie]()
+    @Published var popular = [Movie]()
     
     
     @Published var isLoading = false
@@ -67,6 +68,19 @@ class MovieListViewModel: ObservableObject {
             let movieResponse: MovieResponse = try await apiService.getJSON()
             isLoading = false
             topRated = movieResponse.results
+        } catch {
+            showAlert = true
+            errorMessage = error.localizedDescription
+        }
+    }
+    
+    func fetchPopular(from endpoint: Endpoint) async {
+        let apiService = APIService(urlString: "\(Constant.apiUrl)/movie/\(endpoint.rawValue)", params: nil)
+        isLoading = true
+        do {
+            let movieResponse: MovieResponse = try await apiService.getJSON()
+            isLoading = false
+            popular = movieResponse.results
         } catch {
             showAlert = true
             errorMessage = error.localizedDescription
