@@ -1,25 +1,25 @@
 //
-//  PosterCard.swift
+//  BackdropCard.swift
 //  TheMovieDB
 //
-//  Created by Eric on 28/06/2023.
+//  Created by Eric on 30/06/2023.
 //
 
 import SwiftUI
 
-struct PosterCard: View {
+struct BackdropCard: View {
     let movie: Movie
     
     var body: some View {
         VStack(alignment: .leading) {
             ZStack {
                 RectangleView()
-                    .shadow(color: .black.opacity(0.15), radius: 5, x: 0, y: 5)
-                AsyncImage(url: movie.posterURL) { phase in
+                
+                AsyncImage(url: movie.backdropURL) { phase in
                     if let image = phase.image {
                         image
                             .resizable()
-                            .scaledToFill()
+                            .scaledToFit()
                     } else if phase.error != nil {
                         Image(systemName: "video")
                     } else {
@@ -27,24 +27,26 @@ struct PosterCard: View {
                     }
                 }
             }
-            .frame(width: 90, height: 150)
+            .aspectRatio(16/9, contentMode: .fit)
             .cornerRadius(12)
+            .shadow(color: .black.opacity(0.15), radius: 5, x: 0, y: 5)
             
-            VStack(alignment: .leading) {
+            VStack(alignment: .leading, spacing: 2) {
                 Text(movie.title)
-                
+                    .font(.subheadline)
+                    .lineLimit(1)
                 Text("2023")
-                    .foregroundColor(.gray)
+                    .font(.footnote)
                     .fontWeight(.light)
+                    .foregroundColor(.gray)
             }
-            .font(.caption2)
-            .lineLimit(1)
         }
     }
 }
 
-struct PosterCard_Previews: PreviewProvider {
+struct BackdropCard_Previews: PreviewProvider {
     static var previews: some View {
-        PosterCard(movie: Movie.localMovie)
+        BackdropCard(movie: Movie.localMovie)
+            .padding()
     }
 }

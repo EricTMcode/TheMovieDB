@@ -17,4 +17,8 @@ struct Movie: Codable, Identifiable, Hashable {
     var posterURL: URL {
         return URL(string: "\(Constant.imgUrl)\(posterPath ?? "")")!
     }
+    
+    var backdropURL: URL {
+        return URL(string: "\(Constant.imgUrl)\(backdropPath ?? "")")!
+    }
 }
