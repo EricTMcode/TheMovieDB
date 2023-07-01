@@ -28,6 +28,13 @@ struct ContentView: View {
                     Label("Search", systemImage: "magnifyingglass")
                 }
         }
+        .onAppear {
+            // correct the transparency bug for Tab bars
+            let tabBarAppearance = UITabBarAppearance()
+            tabBarAppearance.configureWithOpaqueBackground()
+            UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
+        }
+        .tint(.orange)
     }
 }
 

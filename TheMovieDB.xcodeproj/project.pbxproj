@@ -91,7 +91,6 @@
 			children = (
 				07A8B8662A4C6C2400436696 /* Feature */,
 				07A8B85D2A4C673100436696 /* Base */,
-				07A8B8762A4C714300436696 /* Json */,
 				07A8B84D2A4C663300436696 /* Assets.xcassets */,
 				07A8B84F2A4C663300436696 /* Preview Content */,
 			);
@@ -120,9 +119,10 @@
 			children = (
 				07A8B8822A4C71C300436696 /* Components */,
 				07A8B8582A4C66BE00436696 /* Models */,
+				07A8B8632A4C6ABE00436696 /* Ressource */,
 				07A8B85E2A4C673B00436696 /* Network */,
 				07A8B8732A4C70FB00436696 /* Extension */,
-				07A8B8632A4C6ABE00436696 /* Ressource */,
+				07A8B8762A4C714300436696 /* Json */,
 			);
 			path = Base;
 			sourceTree = "<group>";

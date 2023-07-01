@@ -60,10 +60,10 @@ struct MovieListView: View {
     }
     
     private func populateMovies() async {
-        await vm.fetchNowPlaying(from: .nowPlaying)
-        await vm.fetchUpcoming(from: .upcoming)
-        await vm.fetchTopRated(from: .topRated)
-        await vm.fetchPopular(from: .popular)
+        await vm.fetchMovies(from: .nowPlaying)
+        await vm.fetchMovies(from: .upcoming)
+        await vm.fetchMovies(from: .topRated)
+        await vm.fetchMovies(from: .popular)
     }
 }
 
