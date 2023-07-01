@@ -1,6 +1,13 @@
 ## TheMovieDB
 Personal Project - Parsing Movies from TheMovieDB - SwiftUI - Async/Await - Handling Error - MVVM 
 
+- Add JSON file and decode for the prototyping.
+- APIService Async/Await whith Error Handling.
+- Parsing each section of movies with a MovieEndpoint.
+- Creating the view with AsyncImage
+
+ 
+
 ## Screenshots
 
 <div>
