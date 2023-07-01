@@ -15,15 +15,15 @@ struct ContentView: View {
                 .tabItem {
                     Label("Movies", systemImage: "film")
                 }
-            MovieListView()
+            TVListView()
                 .tabItem {
                     Label("TV Show", systemImage: "sparkles.tv")
                 }
-            MovieListView()
+            FavoritesView()
                 .tabItem {
                     Label("Favorites", systemImage: "star")
                 }
-            MovieListView()
+            SearchView()
                 .tabItem {
                     Label("Search", systemImage: "magnifyingglass")
                 }

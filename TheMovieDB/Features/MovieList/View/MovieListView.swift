@@ -19,7 +19,7 @@ struct MovieListView: View {
                     PosterCarousselView(title: "Recently added", movies: vm.upcoming)
                     PosterCarousselView(title: "Top Rated Movie", movies: vm.topRated)
                 }
-                .padding(.top)
+                .padding([.top, .bottom])
             }
             .navigationTitle("Welcome")
             .task {
