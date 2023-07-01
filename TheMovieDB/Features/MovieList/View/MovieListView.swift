@@ -24,7 +24,7 @@ struct MovieListView: View {
             .navigationTitle("Welcome")
             .task {
                 if !vm.hasAppeared {
-                    await populateMovies()
+                    await vm.populateMovies()
                     vm.hasAppeared = true
                 }
             }
@@ -44,7 +44,7 @@ struct MovieListView: View {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button {
                         Task {
-                            await populateMovies()
+                            await vm.populateMovies()
                         }
                     } label: {
                         Image(systemName: "arrow.counterclockwise")
@@ -57,13 +57,6 @@ struct MovieListView: View {
                 }
             }
         }
-    }
-    
-    private func populateMovies() async {
-        await vm.fetchMovies(from: .nowPlaying)
-        await vm.fetchMovies(from: .upcoming)
-        await vm.fetchMovies(from: .topRated)
-        await vm.fetchMovies(from: .popular)
     }
 }
 

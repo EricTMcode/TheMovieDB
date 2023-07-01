@@ -41,4 +41,11 @@ class MovieListViewModel: ObservableObject {
             errorMessage = error.localizedDescription
         }
     }
+    
+    func populateMovies() async {
+        await fetchMovies(from: .nowPlaying)
+        await fetchMovies(from: .upcoming)
+        await fetchMovies(from: .topRated)
+        await fetchMovies(from: .popular)
+    }
 }
