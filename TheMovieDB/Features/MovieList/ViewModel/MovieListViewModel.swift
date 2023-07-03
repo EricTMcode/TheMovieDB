@@ -9,11 +9,11 @@ import Foundation
 
 @MainActor
 class MovieListViewModel: ObservableObject {
+    @Published var trending = [Movie]()
     @Published var nowPlaying = [Movie]()
     @Published var upcoming = [Movie]()
     @Published var topRated = [Movie]()
     @Published var popular = [Movie]()
-    
     
     @Published var isLoading = false
     @Published var errorMessage: String?
@@ -26,16 +26,31 @@ class MovieListViewModel: ObservableObject {
         do {
             let movieResponse: MovieResponse = try await apiService.getJSON()
             isLoading = false
+            
             switch endpoint {
             case .nowPlaying:
                 self.nowPlaying = movieResponse.results
-            case .popular:
-                self.popular = movieResponse.results
             case .upcoming:
                 self.upcoming = movieResponse.results
             case .topRated:
                 self.topRated = movieResponse.results
+            case .popular:
+                self.popular = movieResponse.results
             }
+        } catch {
+            showAlert = true
+            errorMessage = error.localizedDescription
+        }
+    }
+    
+    
+    func fetchTrending() async {
+        let apiService = APIService(urlString: "\(Constant.apiUrl)/trending/movie/day", params: nil)
+        isLoading = true
+        do {
+            let movieTrending: MovieTrending = try await apiService.getJSON()
+            isLoading = false
+            trending = movieTrending.results
         } catch {
             showAlert = true
             errorMessage = error.localizedDescription
