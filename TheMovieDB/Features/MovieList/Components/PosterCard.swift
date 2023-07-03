@@ -14,7 +14,7 @@ struct PosterCard: View {
         VStack(alignment: .leading) {
             ZStack {
                 RectangleView()
-                    .shadow(color: .black.opacity(0.15), radius: 5, x: 0, y: 5)
+                    
                 AsyncImage(url: movie.posterURL) { phase in
                     if let image = phase.image {
                         image
@@ -27,19 +27,21 @@ struct PosterCard: View {
                     }
                 }
             }
-            .frame(width: 90, height: 150)
             .cornerRadius(12)
+            .shadow(color: .black.opacity(0.15), radius: 5, x: 0, y: 5)
             
             VStack(alignment: .leading) {
                 Text(movie.title)
+                    .lineLimit(1)
                 
                 Text("2023")
                     .foregroundColor(.gray)
                     .fontWeight(.light)
             }
             .font(.caption2)
-            .lineLimit(1)
+            
         }
+        .frame(width: 90, height: 150)
     }
 }
 

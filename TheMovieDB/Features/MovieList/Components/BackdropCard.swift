@@ -35,18 +35,19 @@ struct BackdropCard: View {
                 Text(movie.title)
                     .font(.subheadline)
                     .lineLimit(1)
+                
                 Text("2023")
                     .font(.footnote)
                     .fontWeight(.light)
                     .foregroundColor(.gray)
             }
         }
+        .frame(width: 332)
     }
 }
 
 struct BackdropCard_Previews: PreviewProvider {
     static var previews: some View {
         BackdropCard(movie: Movie.localMovie)
-            .padding()
     }
 }

@@ -33,7 +33,6 @@ struct PosterCarousselView: View {
                 LazyHStack(alignment: .top, spacing: 15) {
                     ForEach(movies) { movie in
                         PosterCard(movie: movie)
-                            .frame(width: 90, height: 150)
                     }
                 }
                 .padding()

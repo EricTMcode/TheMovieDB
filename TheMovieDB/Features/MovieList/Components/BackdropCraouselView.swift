@@ -15,7 +15,6 @@ struct BackdropCraouselView: View {
             LazyHStack(alignment: .top, spacing: 20) {
                 ForEach(movies) { movie in
                     BackdropCard(movie: movie)
-                        .frame(width: 332)
                 }
             }
         }
