@@ -56,6 +56,9 @@ struct MovieListView: View {
                         .foregroundColor(.orange)
                 }
             }
+            .navigationDestination(for: Movie.self) { movie in
+                MovieDetailView(id: movie.id, title: movie.title)
+            }
         }
     }
 }

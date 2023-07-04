@@ -32,7 +32,10 @@ struct PosterCarousselView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHStack(alignment: .top, spacing: 15) {
                     ForEach(movies) { movie in
-                        PosterCard(movie: movie)
+                        NavigationLink(value: movie) {
+                            PosterCard(movie: movie)
+                        }
+                        .buttonStyle(.plain)
                     }
                 }
                 .padding()
@@ -43,6 +46,8 @@ struct PosterCarousselView: View {
 
 struct PosterCaroussel_Previews: PreviewProvider {
     static var previews: some View {
-        PosterCarousselView(title: "Movie of the day", movies: Movie.localMovies)
+        NavigationStack {
+            PosterCarousselView(title: "Movie of the day", movies: Movie.localMovies)
+        }
     }
 }
