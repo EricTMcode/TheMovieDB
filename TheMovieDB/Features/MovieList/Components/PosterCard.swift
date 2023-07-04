@@ -33,13 +33,13 @@ struct PosterCard: View {
             VStack(alignment: .leading) {
                 Text(movie.title)
                     .lineLimit(1)
+                    .font(.caption)
                 
-                Text("2023")
+                Text("☆ \(movie.voteAverage, specifier: "%.1f")")
                     .foregroundColor(.gray)
-                    .fontWeight(.light)
+                    .fontWeight(.bold)
+                    .font(.caption2)
             }
-            .font(.caption2)
-            
         }
         .frame(width: 90, height: 150)
     }

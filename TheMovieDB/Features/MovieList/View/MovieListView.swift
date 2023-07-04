@@ -12,20 +12,14 @@ struct MovieListView: View {
     
     var body: some View {
         NavigationStack {
-            ZStack {
-                if vm.errorMessage != nil {
-                    FavoritesView()
-                } else {
-                    ScrollView(showsIndicators: false) {
-                        VStack(alignment: .leading, spacing: 10) {
-                            BackdropCraouselView(movies: vm.trending)
-                            PosterCarousselView(title: "Movie of the day", movies: vm.nowPlaying)
-                            PosterCarousselView(title: "Recently added", movies: vm.upcoming)
-                            PosterCarousselView(title: "Top Rated Movie", movies: vm.topRated)
-                        }
-                        .padding([.top, .bottom])
-                    }
+            ScrollView(showsIndicators: false) {
+                VStack(alignment: .leading, spacing: 10) {
+                    BackdropCraouselView(movies: vm.popular)
+                    PosterCarousselView(title: "Movie of the day", movies: vm.nowPlaying)
+                    PosterCarousselView(title: "Recently added", movies: vm.upcoming)
+                    PosterCarousselView(title: "Top Rated Movie", movies: vm.topRated)
                 }
+                .padding([.top, .bottom])
             }
             .navigationTitle("Welcome")
             .task {
@@ -39,13 +33,13 @@ struct MovieListView: View {
                     ProgressView()
                 }
             }
-//            .alert("Application Error", isPresented: $vm.showAlert) {
-//                Button("OK") { }
-//            } message: {
-//                if let errorMessage = vm.errorMessage {
-//                    Text(errorMessage)
-//                }
-//            }
+            .alert("Application Error", isPresented: $vm.showAlert) {
+                Button("OK") { }
+            } message: {
+                if let errorMessage = vm.errorMessage {
+                    Text(errorMessage)
+                }
+            }
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button {

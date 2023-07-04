@@ -9,11 +9,11 @@ import Foundation
 
 @MainActor
 class MovieListViewModel: ObservableObject {
-    @Published var trending = [Movie]()
-    @Published var nowPlaying = [Movie]()
-    @Published var upcoming = [Movie]()
-    @Published var topRated = [Movie]()
-    @Published var popular = [Movie]()
+    @Published var trending: [Movie] = []
+    @Published var nowPlaying: [Movie] = []
+    @Published var upcoming: [Movie] = []
+    @Published var topRated: [Movie] = []
+    @Published var popular: [Movie] = []
     
     @Published var isLoading = false
     @Published var errorMessage: String?
@@ -21,7 +21,7 @@ class MovieListViewModel: ObservableObject {
     @Published var hasAppeared = false
     
     func fetchMovies(from endpoint: Endpoint) async {
-        let apiService = APIService(urlString: "\(Constant.apiUrl)/movie/\(endpoint.rawValue)", params: nil)
+        let apiService = APIService(urlString: "\(Constants.apiUrl)/movie/\(endpoint.rawValue)", params: nil)
         isLoading = true
         do {
             let movieResponse: MovieResponse = try await apiService.getJSON()
@@ -45,7 +45,7 @@ class MovieListViewModel: ObservableObject {
     
     
     func fetchTrending() async {
-        let apiService = APIService(urlString: "\(Constant.apiUrl)/trending/movie/week", params: nil)
+        let apiService = APIService(urlString: "\(Constants.apiUrl)/trending/movie/week", params: nil)
         isLoading = true
         do {
             let movieTrending: MovieTrending = try await apiService.getJSON()
@@ -58,7 +58,6 @@ class MovieListViewModel: ObservableObject {
     }
     
     func populateMovies() async {
-        await fetchTrending()
         await fetchMovies(from: .nowPlaying)
         await fetchMovies(from: .upcoming)
         await fetchMovies(from: .topRated)
