@@ -45,7 +45,7 @@ class MovieListViewModel: ObservableObject {
     
     
     func fetchTrending() async {
-        let apiService = APIService(urlString: "\(Constant.apiUrl)/trending/movie/day", params: nil)
+        let apiService = APIService(urlString: "\(Constant.apiUrl)/trending/movie/week", params: nil)
         isLoading = true
         do {
             let movieTrending: MovieTrending = try await apiService.getJSON()
@@ -58,6 +58,7 @@ class MovieListViewModel: ObservableObject {
     }
     
     func populateMovies() async {
+        await fetchTrending()
         await fetchMovies(from: .nowPlaying)
         await fetchMovies(from: .upcoming)
         await fetchMovies(from: .topRated)
