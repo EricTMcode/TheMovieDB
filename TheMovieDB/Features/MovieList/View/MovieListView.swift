@@ -14,7 +14,7 @@ struct MovieListView: View {
         NavigationStack {
             ScrollView(showsIndicators: false) {
                 VStack(alignment: .leading, spacing: 10) {
-                    BackdropCraouselView(movies: vm.popular)
+                    BackdropCarouselView(movies: vm.popular)
                     PosterCarousselView(title: "Movie of the day", movies: vm.nowPlaying)
                     PosterCarousselView(title: "Recently added", movies: vm.upcoming)
                     PosterCarousselView(title: "Top Rated Movie", movies: vm.topRated)
@@ -28,7 +28,7 @@ struct MovieListView: View {
                     vm.hasAppeared = true
                 }
             }
-            .overlay() {
+            .overlay {
                 if vm.isLoading {
                     ProgressView()
                 }

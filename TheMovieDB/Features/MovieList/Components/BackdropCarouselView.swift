@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BackdropCraouselView: View {
+struct BackdropCarouselView: View {
     let movies: [Movie]
     
     var body: some View {
@@ -20,15 +20,15 @@ struct BackdropCraouselView: View {
                     .buttonStyle(.plain)
                 }
             }
+            .padding(.leading)
         }
-        .padding(.leading)
     }
 }
 
 struct BackdropCraousel_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            BackdropCraouselView(movies: Movie.localMovies)
+            BackdropCarouselView(movies: Movie.localMovies)
         }
     }
 }

@@ -9,11 +9,11 @@ import Foundation
 
 @MainActor
 class MovieListViewModel: ObservableObject {
-    @Published var trending: [Movie] = []
     @Published var nowPlaying: [Movie] = []
     @Published var upcoming: [Movie] = []
     @Published var topRated: [Movie] = []
     @Published var popular: [Movie] = []
+    @Published var trending: [Movie] = []
     
     @Published var isLoading = false
     @Published var errorMessage: String?
@@ -42,7 +42,6 @@ class MovieListViewModel: ObservableObject {
             errorMessage = error.localizedDescription
         }
     }
-    
     
     func fetchTrending() async {
         let apiService = APIService(urlString: "\(Constants.apiUrl)/trending/movie/week", params: nil)

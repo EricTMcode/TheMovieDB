@@ -22,11 +22,37 @@ struct MovieDetailView: View {
         .task {
             await vm.loadMovie(id: id)
         }
+        .overlay {
+            if vm.isLoading {
+                ProgressView()
+            }
+        }
         .alert("Application Error", isPresented: $vm.showAlert) {
             Button("OK") { }
         } message: {
             if let errorMessage = vm.errorMessage {
                 Text(errorMessage)
+            }
+        }
+//        .navigationBarBackButtonHidden()
+        .toolbar {
+//            ToolbarItem(placement: .navigationBarLeading) {
+//                Button {
+//
+//                } label: {
+//                    Image(systemName: "chevron.left")
+//                        .font(.title3)
+//                        .foregroundColor(.orange)
+//                        .shadow(radius: 10)
+//                }
+//            }
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button {
+                    
+                } label: {
+                    Image(systemName: "star")
+                        .foregroundColor(.orange)
+                }
             }
         }
     }
@@ -36,6 +62,8 @@ struct MovieDetailView: View {
 
 struct MovieDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        MovieDetailView(id: Movie.localMovie.id, title: "Black Adam")
+        NavigationStack {
+            MovieDetailView(id: Movie.localMovie.id, title: "Black Adam")
+        }
     }
 }

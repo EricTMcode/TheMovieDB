@@ -34,7 +34,7 @@
 		07A8B8842A4C71D200436696 /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8B8832A4C71D200436696 /* RectangleView.swift */; };
 		07A8B8862A4C749700436696 /* PosterCarousselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8B8852A4C749700436696 /* PosterCarousselView.swift */; };
 		07A8B8882A4EF6D000436696 /* BackdropCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8B8872A4EF6D000436696 /* BackdropCard.swift */; };
-		07A8B88A2A4EF89000436696 /* BackdropCraouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8B8892A4EF89000436696 /* BackdropCraouselView.swift */; };
+		07A8B88A2A4EF89000436696 /* BackdropCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8B8892A4EF89000436696 /* BackdropCarouselView.swift */; };
 		07A8B8902A504C0600436696 /* TVListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8B88F2A504C0600436696 /* TVListView.swift */; };
 		07A8B8922A504C3D00436696 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8B8912A504C3C00436696 /* FavoritesView.swift */; };
 		07A8B8942A504C5B00436696 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8B8932A504C5B00436696 /* SearchView.swift */; };
@@ -70,7 +70,7 @@
 		07A8B8832A4C71D200436696 /* RectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
 		07A8B8852A4C749700436696 /* PosterCarousselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterCarousselView.swift; sourceTree = "<group>"; };
 		07A8B8872A4EF6D000436696 /* BackdropCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackdropCard.swift; sourceTree = "<group>"; };
-		07A8B8892A4EF89000436696 /* BackdropCraouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackdropCraouselView.swift; sourceTree = "<group>"; };
+		07A8B8892A4EF89000436696 /* BackdropCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackdropCarouselView.swift; sourceTree = "<group>"; };
 		07A8B88F2A504C0600436696 /* TVListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVListView.swift; sourceTree = "<group>"; };
 		07A8B8912A504C3C00436696 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		07A8B8932A504C5B00436696 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -236,7 +236,7 @@
 			children = (
 				07A8B8852A4C749700436696 /* PosterCarousselView.swift */,
 				07A8B8712A4C70BE00436696 /* PosterCard.swift */,
-				07A8B8892A4EF89000436696 /* BackdropCraouselView.swift */,
+				07A8B8892A4EF89000436696 /* BackdropCarouselView.swift */,
 				07A8B8872A4EF6D000436696 /* BackdropCard.swift */,
 			);
 			path = Components;
@@ -380,7 +380,7 @@
 				07A8B84C2A4C663200436696 /* ContentView.swift in Sources */,
 				0786D2B92A5444F8009CABC0 /* MovieDetailViewModel.swift in Sources */,
 				0786D2B62A544449009CABC0 /* MovieDetailView.swift in Sources */,
-				07A8B88A2A4EF89000436696 /* BackdropCraouselView.swift in Sources */,
+				07A8B88A2A4EF89000436696 /* BackdropCarouselView.swift in Sources */,
 				07A8B86B2A4C6C4D00436696 /* MovieListViewModel.swift in Sources */,
 				0786D2BD2A5448E9009CABC0 /* GeometryHelper.swift in Sources */,
 				07A8B8862A4C749700436696 /* PosterCarousselView.swift in Sources */,

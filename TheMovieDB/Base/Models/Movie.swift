@@ -16,6 +16,7 @@ struct Movie: Codable, Identifiable, Hashable {
     let voteAverage: Double
     
     let genres: [MovieGenre]?
+    let credits: MovieCredit?
     
     var posterURL: URL {
         return URL(string: "\(Constants.imgUrl)\(posterPath ?? "")")!
@@ -40,4 +41,19 @@ struct Movie: Codable, Identifiable, Hashable {
 struct MovieGenre: Codable, Identifiable, Hashable {
     let id: Int
     let name: String
+}
+
+struct MovieCredit: Codable, Hashable {
+    let cast: [MovieCast]
+}
+
+struct MovieCast: Codable, Identifiable, Hashable {
+    let id: Int
+    let character: String
+    let name: String
+    let profilePath: String?
+    
+    var profileURL: URL {
+        return URL(string: "\(Constants.imgUrl)\(profilePath ?? "")")!
+    }
 }
