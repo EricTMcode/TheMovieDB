@@ -15,24 +15,28 @@ struct MovieDetailListView: View {
             ScrollView(showsIndicators: false) {
                 GeometryReader { geo in
                     ZStack(alignment: .bottomLeading) {
-                        MovieDetailImage
+                        MovieDetailImageView
                             .frame(width: geo.size.width, height: GeometryHelper.getHeightForHeaderImage(geo))
                         
                         Rectangle()
                             .foregroundColor(.black.opacity(0.5))
                             .frame(width: geo.size.width, height: 80)
                         
-                        MovieDetailTitle
+                        MovieDetailTitleView
                     }
                     .offset(x: 0, y: GeometryHelper.getOffsetForHeaderImage(geo))
                 }
                 .frame(height: UIScreen.main.bounds.height * 0.5)
+                VStack(alignment: .leading, spacing: 20) {
+                    MovieDetailOverviewView
+                }
+                .padding([.leading, .trailing])
             }
         }
         .ignoresSafeArea()
     }
     
-    private var MovieDetailImage: some View {
+    private var MovieDetailImageView: some View {
         AsyncImage(url: movie.backdropOriginalURL) { phase in
             if let image = phase.image {
                 image
@@ -48,7 +52,7 @@ struct MovieDetailListView: View {
         }
     }
     
-    private var MovieDetailTitle: some View {
+    private var MovieDetailTitleView: some View {
         VStack(alignment: .leading, spacing: 2) {
             Text(movie.title)
                 .font(.title3)
@@ -67,6 +71,15 @@ struct MovieDetailListView: View {
         .shadow(radius: 7)
         .padding(.leading)
         .padding(.bottom, 8)
+    }
+    
+    private var MovieDetailOverviewView: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            MovieDetailTitle(text: "Overview")
+            Text(movie.overview)
+                .font(.callout)
+        }
+        .padding(.top, 5)
     }
 }
 

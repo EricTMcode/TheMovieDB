@@ -14,7 +14,10 @@ struct BackdropCraouselView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHStack(alignment: .top, spacing: 20) {
                 ForEach(movies) { movie in
-                    BackdropCard(movie: movie)
+                    NavigationLink(value: movie) {
+                        BackdropCard(movie: movie)
+                    }
+                    .buttonStyle(.plain)
                 }
             }
         }
@@ -24,6 +27,8 @@ struct BackdropCraouselView: View {
 
 struct BackdropCraousel_Previews: PreviewProvider {
     static var previews: some View {
-        BackdropCraouselView(movies: Movie.localMovies)
+        NavigationStack {
+            BackdropCraouselView(movies: Movie.localMovies)
+        }
     }
 }

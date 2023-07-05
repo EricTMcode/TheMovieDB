@@ -22,6 +22,13 @@ struct MovieDetailView: View {
         .task {
             await vm.loadMovie(id: id)
         }
+        .alert("Application Error", isPresented: $vm.showAlert) {
+            Button("OK") { }
+        } message: {
+            if let errorMessage = vm.errorMessage {
+                Text(errorMessage)
+            }
+        }
     }
 }
 

@@ -55,5 +55,4 @@ struct APIService {
             throw APIError.dataTaskError(error.localizedDescription)
         }
     }
-    
 }
