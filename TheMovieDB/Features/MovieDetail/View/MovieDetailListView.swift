@@ -22,6 +22,7 @@ struct MovieDetailListView: View {
                             .foregroundColor(.black.opacity(0.5))
                             .frame(width: geo.size.width, height: 80)
                         
+                        MovieDetailPosterView
                         MovieDetailTitleView
                     }
                     .offset(x: 0, y: GeometryHelper.getOffsetForHeaderImage(geo))
@@ -35,6 +36,31 @@ struct MovieDetailListView: View {
             }
         }
         .ignoresSafeArea()
+    }
+    
+    private var MovieDetailPosterView: some View {
+        VStack {
+            ZStack {
+                RectangleView()
+                    
+                AsyncImage(url: movie.posterURL) { phase in
+                    if let image = phase.image {
+                        image
+                            .resizable()
+                            .scaledToFill()
+                    } else if phase.error != nil {
+                        Image(systemName: "video")
+                    } else {
+                        ProgressView()
+                    }
+                }
+            }
+            .cornerRadius(10)
+            .frame(width: 120, height: 60)
+            .shadow(radius: 10)
+        }
+        .padding(.leading)
+        .padding(.bottom, 150)
     }
     
     private var MovieDetailImageView: some View {
@@ -61,7 +87,7 @@ struct MovieDetailListView: View {
                 .foregroundColor(.white)
                 .lineLimit(1)
             
-                Text("☆ \(movie.voteAverage, specifier: "%.1f")   \("1h25")   \("2023")")
+                Text("★ \(movie.voteAverage, specifier: "%.1f")   \("1h25")   \("2023")")
                     .font(.callout)
                     .fontWeight(.medium)
             
@@ -125,7 +151,7 @@ struct MovieDetailListView: View {
                         }
                     }
                 }
-                .padding(.leading)
+                .padding([.leading, .trailing])
             }
         }
     }
