@@ -10,4 +10,6 @@ Personal Project - Parsing Movies from TheMovieDB - SwiftUI - Async/Await - Hand
 <div>
   <img src="Screenshots/screen-1.png" width="350">
   <img src="Screenshots/screen-2.png" width="350">
+  <img src="Screenshots/screen-3.png" width="350">
+  <img src="Screenshots/screen-4.png" width="350">
 </div>
