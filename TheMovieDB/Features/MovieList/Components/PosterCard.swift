@@ -11,8 +11,7 @@ struct PosterCard: View {
     let movie: Movie
     
     var body: some View {
-        movieRowView(movie: movie)
-            .frame(width: 90, height: 150)
+        moviePosterCard(movie: movie)
     }
 }
 
@@ -23,7 +22,7 @@ struct PosterCard_Previews: PreviewProvider {
 }
 
 extension PosterCard {
-    func movieRowView(movie: Movie) -> some View {
+    func moviePosterCard(movie: Movie) -> some View {
         VStack {
             ZStack {
                 RectangleView()
@@ -33,6 +32,7 @@ extension PosterCard {
             .shadow(color: .black.opacity(0.15), radius: 5, x: 0, y: 5)
             movieInfo(movie: movie)
         }
+        .frame(width: 90, height: 150)
     }
     
     func moviePoster(movie: Movie) -> some View {
