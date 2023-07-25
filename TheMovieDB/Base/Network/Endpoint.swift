@@ -13,7 +13,7 @@ enum Endpoint: String, CaseIterable, Identifiable {
     case nowPlaying = "now_playing"
     case upcoming
     case topRated = "top_rated"
-    case popular
+    case popular 
 }
 
 extension Endpoint {
