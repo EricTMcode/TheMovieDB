@@ -1,0 +1,422 @@
+{
+    "page": 1,
+    "results": [
+        {
+            "backdrop_path": "/7BzmK4MWc0cj4hCxwWURt6TS6UR.jpg",
+            "first_air_date": "2023-08-31",
+            "genre_ids": [
+                16,
+                10765,
+                10759,
+                35
+            ],
+            "id": 131378,
+            "name": "Adventure Time: Fionna & Cake",
+            "origin_country": [
+                "US"
+            ],
+            "original_language": "en",
+            "original_name": "Adventure Time: Fionna & Cake",
+            "overview": "Fionna and Cake – with the help of the former Ice King, Simon Petrikov - embark on a multiverse-hopping adventure and journey of self-discovery. All the while a powerful new antagonist determined to track them down and erase them from existence, lurks in the shadows.",
+            "popularity": 279.319,
+            "poster_path": "/fi1b6U1kp73xheECzqwzMn8u3mX.jpg",
+            "vote_average": 9.4,
+            "vote_count": 100
+        },
+        {
+            "backdrop_path": "/tsRy63Mu5cu8etL1X7ZLyf7UP1M.jpg",
+            "first_air_date": "2008-01-20",
+            "genre_ids": [
+                18,
+                80
+            ],
+            "id": 1396,
+            "name": "Breaking Bad",
+            "origin_country": [
+                "US"
+            ],
+            "original_language": "en",
+            "original_name": "Breaking Bad",
+            "overview": "When Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting desire to secure his family's financial future at any cost as he enters the dangerous world of drugs and crime.",
+            "popularity": 366.035,
+            "poster_path": "/3xnWaLQjelJDDF7LT1WBo6f4BRe.jpg",
+            "vote_average": 8.9,
+            "vote_count": 12442
+        },
+        {
+            "backdrop_path": "/rkB4LyZHo1NHXFEDHl9vSD9r1lI.jpg",
+            "first_air_date": "2021-11-06",
+            "genre_ids": [
+                16,
+                18,
+                10765,
+                10759
+            ],
+            "id": 94605,
+            "name": "Arcane",
+            "origin_country": [
+                "US"
+            ],
+            "original_language": "en",
+            "original_name": "Arcane",
+            "overview": "Amid the stark discord of twin cities Piltover and Zaun, two sisters fight on rival sides of a war between magic technologies and clashing convictions.",
+            "popularity": 106.555,
+            "poster_path": "/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg",
+            "vote_average": 8.7,
+            "vote_count": 3349
+        },
+        {
+            "backdrop_path": "/4Mt7WHox67uJ1yErwTBFcV8KWgG.jpg",
+            "first_air_date": "1999-10-20",
+            "genre_ids": [
+                10759,
+                35,
+                16
+            ],
+            "id": 37854,
+            "name": "One Piece",
+            "origin_country": [
+                "JP"
+            ],
+            "original_language": "ja",
+            "original_name": "ワンピース",
+            "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
+            "popularity": 160.454,
+            "poster_path": "/fcXdJlbSdUEeMSJFsXKsznGwwok.jpg",
+            "vote_average": 8.7,
+            "vote_count": 4074
+        },
+        {
+            "backdrop_path": "/9In9QgVJx7PlFOAgVHCKKSbo605.jpg",
+            "first_air_date": "2013-12-02",
+            "genre_ids": [
+                16,
+                35,
+                10765,
+                10759
+            ],
+            "id": 60625,
+            "name": "Rick and Morty",
+            "origin_country": [
+                "US"
+            ],
+            "original_language": "en",
+            "original_name": "Rick and Morty",
+            "overview": "Rick is a mentally-unbalanced but scientifically gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school.",
+            "popularity": 672.466,
+            "poster_path": "/cvhNj9eoRBe5SxjCbQTkh05UP5K.jpg",
+            "vote_average": 8.7,
+            "vote_count": 8616
+        },
+        {
+            "backdrop_path": "/A6tMQAo6t6eRFCPhsrShmxZLqFB.jpg",
+            "first_air_date": "2009-04-05",
+            "genre_ids": [
+                10759,
+                16,
+                10765
+            ],
+            "id": 31911,
+            "name": "Fullmetal Alchemist: Brotherhood",
+            "origin_country": [
+                "JP"
+            ],
+            "original_language": "ja",
+            "original_name": "鋼の錬金術師 FULLMETAL ALCHEMIST",
+            "overview": "Edward and Alphonse Elric's reckless disregard for alchemy's fun­damental laws ripped half of Ed's limbs from his body and left Al's soul clinging to a cold suit of armor. To restore what was lost, the brothers scour a war-torn land for the Philosopher's Sto­ne, a fabled relic which grants the ability to perform alchemy in impossible ways.\n\nThe Elrics are not alone in their search; the corrupt State Military is also eager to harness the artifact's power. So too are the strange Homunculi and their shadowy creator. The mythical gem lures exotic alchemists from distant kingdoms, scarring some deeply enough to inspire murder. As the Elrics find their course altered by these enemies and allies, their purpose remains unchanged – and their bond unbreakable.",
+            "popularity": 162.224,
+            "poster_path": "/5ZFUEOULaVml7pQuXxhpR2SmVUw.jpg",
+            "vote_average": 8.7,
+            "vote_count": 1751
+        },
+        {
+            "backdrop_path": "/70YdbMELM4b8x8VXjlubymb2bQ0.jpg",
+            "first_air_date": "2017-03-19",
+            "genre_ids": [
+                18,
+                10751
+            ],
+            "id": 70785,
+            "name": "Anne with an E",
+            "origin_country": [
+                "CA"
+            ],
+            "original_language": "en",
+            "original_name": "Anne with an E",
+            "overview": "A coming-of-age story about an outsider who, against all odds and numerous challenges, fights for love and acceptance and for her place in the world. The series centers on a young orphaned girl in the late 1890’s, who, after an abusive childhood spent in orphanages and the homes of strangers, is mistakenly sent to live with an elderly woman and her aging brother. Over time, 13-year-old Anne will transform their lives and eventually the small town in which they live with her unique spirit, fierce intellect and brilliant imagination.",
+            "popularity": 148.448,
+            "poster_path": "/6P6tXhjT5tK3qOXzxF9OMLlG7iz.jpg",
+            "vote_average": 8.7,
+            "vote_count": 4387
+        },
+        {
+            "backdrop_path": "/kU98MbVVgi72wzceyrEbClZmMFe.jpg",
+            "first_air_date": "2005-02-21",
+            "genre_ids": [
+                16,
+                10759,
+                10765
+            ],
+            "id": 246,
+            "name": "Avatar: The Last Airbender",
+            "origin_country": [
+                "US"
+            ],
+            "original_language": "en",
+            "original_name": "Avatar: The Last Airbender",
+            "overview": "In a war-torn world of elemental magic, a young boy reawakens to undertake a dangerous mystic quest to fulfill his destiny as the Avatar, and bring peace to the world.",
+            "popularity": 100.387,
+            "poster_path": "/cHFZA8Tlv03nKTGXhLOYOLtqoSm.jpg",
+            "vote_average": 8.7,
+            "vote_count": 3500
+        },
+        {
+            "backdrop_path": "/nTvM4mhqNlHIvUkI1gVnW6XP7GG.jpg",
+            "first_air_date": "2019-04-06",
+            "genre_ids": [
+                16,
+                10759,
+                10765
+            ],
+            "id": 85937,
+            "name": "Demon Slayer: Kimetsu no Yaiba",
+            "origin_country": [
+                "JP"
+            ],
+            "original_language": "ja",
+            "original_name": "鬼滅の刃",
+            "overview": "It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole survivor, has been transformed into a demon herself. Though devastated by this grim reality, Tanjiro resolves to become a “demon slayer” so that he can turn his sister back into a human, and kill the demon that massacred his family.",
+            "popularity": 129.78,
+            "poster_path": "/xUfRZu2mi8jH6SzQEJGP6tjBuYj.jpg",
+            "vote_average": 8.7,
+            "vote_count": 5631
+        },
+        {
+            "backdrop_path": "/6UH52Fmau8RPsMAbQbjwN3wJSCj.jpg",
+            "first_air_date": "2021-03-25",
+            "genre_ids": [
+                16,
+                10765,
+                10759,
+                18
+            ],
+            "id": 95557,
+            "name": "Invincible",
+            "origin_country": [
+                "US"
+            ],
+            "original_language": "en",
+            "original_name": "Invincible",
+            "overview": "Mark Grayson is a normal teenager except for the fact that his father is the most powerful superhero on the planet. Shortly after his seventeenth birthday, Mark begins to develop powers of his own and enters into his father’s tutelage.",
+            "popularity": 122.935,
+            "poster_path": "/lxVS24ZhG3WQf3IMbkFIg6olT6A.jpg",
+            "vote_average": 8.7,
+            "vote_count": 3726
+        },
+        {
+            "backdrop_path": "/jsXKG9uppnPrhqFNhImllyCfLhl.jpg",
+            "first_air_date": "2016-04-03",
+            "genre_ids": [
+                10759,
+                16
+            ],
+            "id": 65930,
+            "name": "My Hero Academia",
+            "origin_country": [
+                "JP"
+            ],
+            "original_language": "ja",
+            "original_name": "僕のヒーローアカデミア",
+            "overview": "In a world where eighty percent of the population has some kind of super-powered Quirk, Izuku was unlucky enough to be born completely normal. But that won't stop him from enrolling in a prestigious hero academy. Now, he'll get his first taste of brutal rivalry from other schools as he braves the cutthroat, no-holds-barred provisional license exam.",
+            "popularity": 63.601,
+            "poster_path": "/ivOLM47yJt90P19RH1NvJrAJz9F.jpg",
+            "vote_average": 8.7,
+            "vote_count": 4509
+        },
+        {
+            "backdrop_path": "/hMjvf1xGcCbbobFuM2iYR9Tj0Yr.jpg",
+            "first_air_date": "2022-04-22",
+            "genre_ids": [
+                18
+            ],
+            "id": 124834,
+            "name": "Heartstopper",
+            "origin_country": [
+                "GB"
+            ],
+            "original_language": "en",
+            "original_name": "Heartstopper",
+            "overview": "Teens Charlie and Nick discover their unlikely friendship might be something more as they navigate school and young love in this coming-of-age series.",
+            "popularity": 115.184,
+            "poster_path": "/p0AtD0ivSlHq2MHY6JFgyhNqAQY.jpg",
+            "vote_average": 8.7,
+            "vote_count": 1049
+        },
+        {
+            "backdrop_path": "/uoA7xBzCt3XXqL5fMmB8pmYgABJ.jpg",
+            "first_air_date": "2016-12-02",
+            "genre_ids": [
+                18,
+                10765,
+                35
+            ],
+            "id": 67915,
+            "name": "Goblin",
+            "origin_country": [
+                "KR"
+            ],
+            "original_language": "ko",
+            "original_name": "쓸쓸하고 찬란하神-도깨비",
+            "overview": "In his quest for a bride to break his immortal curse, a 939-year-old guardian of souls meets a grim reaper and a sprightly student with a tragic past.",
+            "popularity": 82.922,
+            "poster_path": "/sPkxHNw5BFvuCFGWw825TS7n6X3.jpg",
+            "vote_average": 8.7,
+            "vote_count": 2547
+        },
+        {
+            "backdrop_path": "/cHyY5z4txdVyGtYMvBJhCqCcJso.jpg",
+            "first_air_date": "2020-01-10",
+            "genre_ids": [
+                16,
+                10765,
+                18,
+                10759,
+                35
+            ],
+            "id": 92685,
+            "name": "The Owl House",
+            "origin_country": [
+                "US"
+            ],
+            "original_language": "en",
+            "original_name": "The Owl House",
+            "overview": "An animated fantasy-comedy series that follows Luz, a self-assured teenage girl who accidentally stumbles upon a portal to a magical world where she befriends a rebellious witch, Eda, and an adorably tiny warrior, King. Despite not having magical abilities, Luz pursues her dream of becoming a witch by serving as Eda's apprentice at the Owl House and ultimately finds a new family in an unlikely setting.",
+            "popularity": 331.993,
+            "poster_path": "/zhdy3PcNVE15wj1wrxn45ARZBnx.jpg",
+            "vote_average": 8.7,
+            "vote_count": 1382
+        },
+        {
+            "backdrop_path": "/rqbCbjB19amtOtFQbb3K2lgm2zv.jpg",
+            "first_air_date": "2013-04-07",
+            "genre_ids": [
+                10765,
+                16,
+                10759
+            ],
+            "id": 1429,
+            "name": "Attack on Titan",
+            "origin_country": [
+                "JP"
+            ],
+            "original_language": "ja",
+            "original_name": "進撃の巨人",
+            "overview": "Several hundred years ago, humans were nearly exterminated by Titans. Titans are typically several stories tall, seem to have no intelligence, devour human beings and, worst of all, seem to do it for the pleasure rather than as a food source. A small percentage of humanity survived by walling themselves in a city protected by extremely high walls, even taller than the biggest Titans. Flash forward to the present and the city has not seen a Titan in over 100 years. Teenage boy Eren and his foster sister Mikasa witness something horrific as the city walls are destroyed by a Colossal Titan that appears out of thin air. As the smaller Titans flood the city, the two kids watch in horror as their mother is eaten alive. Eren vows that he will murder every single Titan and take revenge for all of mankind.",
+            "popularity": 103.739,
+            "poster_path": "/8C5gYahMFmzHKGNID8QrG5t25WU.jpg",
+            "vote_average": 8.7,
+            "vote_count": 5511
+        },
+        {
+            "backdrop_path": "/uDgy6hyPd82kOHh6I95FLtLnj6p.jpg",
+            "first_air_date": "2023-01-15",
+            "genre_ids": [
+                18
+            ],
+            "id": 100088,
+            "name": "The Last of Us",
+            "origin_country": [
+                "US"
+            ],
+            "original_language": "en",
+            "original_name": "The Last of Us",
+            "overview": "Twenty years after modern civilization has been destroyed, Joel, a hardened survivor, is hired to smuggle Ellie, a 14-year-old girl, out of an oppressive quarantine zone. What starts as a small job soon becomes a brutal, heartbreaking journey, as they both must traverse the United States and depend on each other for survival.",
+            "popularity": 247.159,
+            "poster_path": "/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg",
+            "vote_average": 8.7,
+            "vote_count": 4093
+        },
+        {
+            "backdrop_path": "/2vbE9ajftJ7dkqUAyxDS0WFILx8.jpg",
+            "first_air_date": "2010-09-06",
+            "genre_ids": [
+                16,
+                35
+            ],
+            "id": 31132,
+            "name": "Regular Show",
+            "origin_country": [
+                "US"
+            ],
+            "original_language": "en",
+            "original_name": "Regular Show",
+            "overview": "Two bored groundskeepers, Mordecai (a six-foot-tall blue jay) and Rigby (a hyperactive raccoon) are best friends who spend their days trying to entertain themselves by any means necessary, much to the displeasure of their boss. Their everyday pursuits often lead to things spiraling out of control and into the surreal.",
+            "popularity": 341.589,
+            "poster_path": "/mS5SLxMYcKfUxA0utBSR5MOAWWr.jpg",
+            "vote_average": 8.7,
+            "vote_count": 1784
+        },
+        {
+            "backdrop_path": "/900tHlUYUkp7Ol04XFSoAaEIXcT.jpg",
+            "first_air_date": "2019-05-06",
+            "genre_ids": [
+                18
+            ],
+            "id": 87108,
+            "name": "Chernobyl",
+            "origin_country": [
+                "US"
+            ],
+            "original_language": "en",
+            "original_name": "Chernobyl",
+            "overview": "The true story of one of the worst man-made catastrophes in history: the catastrophic nuclear accident at Chernobyl. A tale of the brave men and women who sacrificed to save Europe from unimaginable disaster.",
+            "popularity": 102.899,
+            "poster_path": "/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg",
+            "vote_average": 8.7,
+            "vote_count": 5390
+        },
+        {
+            "backdrop_path": "/zbBNp4djy9dGOfMzVBQoP1ZAdET.jpg",
+            "first_air_date": "2017-06-19",
+            "genre_ids": [
+                35,
+                10751
+            ],
+            "id": 72637,
+            "name": "Once",
+            "origin_country": [
+                "AR"
+            ],
+            "original_language": "es",
+            "original_name": "O11CE",
+            "overview": "The series revolves around Gabo, a soccer-loving teenager who, upon receiving a scholarship from the prestigious Sports Academic Institute (IAD) of Buenos Aires, will see his dream of playing at Los Halcones Dorados, the renowned amateur team of the school, and also his longing to become a professional footballer.",
+            "popularity": 85.711,
+            "poster_path": "/sen4We5WQCRsGZe82ohTEmxFD06.jpg",
+            "vote_average": 8.7,
+            "vote_count": 1363
+        },
+        {
+            "backdrop_path": "/5jtc5va1gDiRi9pjnGqgCN1W0hF.jpg",
+            "first_air_date": "2006-07-09",
+            "genre_ids": [
+                16,
+                35,
+                18
+            ],
+            "id": 42821,
+            "name": "Welcome to the N.H.K.",
+            "origin_country": [
+                "JP"
+            ],
+            "original_language": "ja",
+            "original_name": "NHKにようこそ!",
+            "overview": "Sato's life – or what's left of it – is a paranoid mess of conspiracy theories and social anxieties. He's terrified of the outside world; his apartment is overflowing with the remnants of cheap take-out food; and his retinas have been permanently scarred by a steady diet of internet porn. But maybe it's not all his fault. After all, the nefarious N.H.K. is out there, and they’re determined to turn society's fringe-dwellers into a brainwashed lot of jobless, hopeless, futureless recluses.\n\nEnter Misaki – a mysterious girl-next-door type who is Sato's last chance to beat-down his inner demons and venture out into the light of day. She's ready to help him overcome his crippling phobias, but Sato would rather cower in his existential foxhole and pretend to work on the demo for his virtual sex game.\n\nHe’s afraid to face the world. She's strangely desperate to fix a total stranger. Maybe together they can be normal.",
+            "popularity": 38.363,
+            "poster_path": "/hIsRcWso57zxD2MWBSqze5G4NDS.jpg",
+            "vote_average": 8.6,
+            "vote_count": 104
+        }
+    ],
+    "total_pages": 153,
+    "total_results": 3041
+}

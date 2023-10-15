@@ -40,17 +40,24 @@ extension Bundle {
 
 extension Media {
     
-    // 1. Decode movie_list.json for development
+    // 1. Decode movie_list.json
     static var localMovies: [Media] {
         let response: MediaResponse = Bundle.main.decode(filename: "movie_list")
         return response.results
     }
     
-    // 2. Create an example movie for development
+    // 2. Create an example movie
     static var localMovie: Media {
         localMovies[0]
     }
     
+    // 3. Decode tv_list.json
+    static var localTVs: [Media] {
+        let response: MediaResponse = Bundle.main.decode(filename: "tv_list")
+        return response.results
+    }
+    
+    // 4. Create an example tv
     static var localTV: Media {
         let tv: Media = Bundle.main.decode(filename: "tv_info")
         return tv
