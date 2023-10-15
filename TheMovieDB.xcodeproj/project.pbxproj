@@ -19,6 +19,7 @@
 		074180532ADC18A300D25B8C /* tv_info.json in Resources */ = {isa = PBXBuildFile; fileRef = 074180522ADC18A300D25B8C /* tv_info.json */; };
 		074180552ADC191C00D25B8C /* MediaPosterCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074180542ADC191C00D25B8C /* MediaPosterCarouselView.swift */; };
 		074180592ADC1A4900D25B8C /* tv_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 074180582ADC1A4900D25B8C /* tv_list.json */; };
+		0741805B2ADC1AF800D25B8C /* MediaBackdropCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0741805A2ADC1AF800D25B8C /* MediaBackdropCardView.swift */; };
 		0786D2BD2A5448E9009CABC0 /* GeometryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786D2BC2A5448E9009CABC0 /* GeometryHelper.swift */; };
 		0786D2C32A55905E009CABC0 /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786D2C22A55905E009CABC0 /* TextViews.swift */; };
 		07A8B84A2A4C663200436696 /* TheMovieDBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8B8492A4C663200436696 /* TheMovieDBApp.swift */; };
@@ -51,6 +52,7 @@
 		074180522ADC18A300D25B8C /* tv_info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tv_info.json; sourceTree = "<group>"; };
 		074180542ADC191C00D25B8C /* MediaPosterCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPosterCarouselView.swift; sourceTree = "<group>"; };
 		074180582ADC1A4900D25B8C /* tv_list.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tv_list.json; sourceTree = "<group>"; };
+		0741805A2ADC1AF800D25B8C /* MediaBackdropCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaBackdropCardView.swift; sourceTree = "<group>"; };
 		0786D2BC2A5448E9009CABC0 /* GeometryHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryHelper.swift; sourceTree = "<group>"; };
 		0786D2C22A55905E009CABC0 /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
 		07A8B8462A4C663200436696 /* TheMovieDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheMovieDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +116,7 @@
 			children = (
 				074180502ADC15B700D25B8C /* MediaPosterCard.swift */,
 				074180542ADC191C00D25B8C /* MediaPosterCarouselView.swift */,
+				0741805A2ADC1AF800D25B8C /* MediaBackdropCardView.swift */,
 			);
 			path = MediaViews;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				07A8B8942A504C5B00436696 /* SearchView.swift in Sources */,
 				074180432ADC102B00D25B8C /* Language.swift in Sources */,
 				074180402ADC100500D25B8C /* Endpoint.swift in Sources */,
+				0741805B2ADC1AF800D25B8C /* MediaBackdropCardView.swift in Sources */,
 				0786D2C32A55905E009CABC0 /* TextViews.swift in Sources */,
 				07A8B8842A4C71D200436696 /* RectangleView.swift in Sources */,
 				07A8B84C2A4C663200436696 /* ContentView.swift in Sources */,
@@ -510,6 +514,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -538,6 +543,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

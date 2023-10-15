@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RectangleView: View {
+            
     var body: some View {
         Rectangle()
             .foregroundColor(.gray)
