@@ -14,7 +14,7 @@ struct MovieListView: View {
     var body: some View {
         VStack {
             ForEach(vm.topRated) { movie in
-                Text(movie.title ?? "n/a")
+                Text(movie.movieTitle)
             }
         }
         .task {

@@ -14,7 +14,7 @@ struct TVListView: View {
     var body: some View {
         VStack {
             ForEach(vm.tvTopRated) { tv in
-                Text(tv.name ?? "n/a")
+                Text(tv.TVTitle)
             }
         }
         .task {

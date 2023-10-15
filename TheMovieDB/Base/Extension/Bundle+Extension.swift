@@ -38,18 +38,23 @@ extension Bundle {
 
 // MARK: - MOVIE EXTENSION
 
-//extension Movie {
-//    
-//    // 1. Decode movie_list.json for development
-//    static var localMovies: [Movie] {
-//        let response: MovieResponse = Bundle.main.decode(filename: "movie_list")
-//        return response.results
-//    }
-//    
-//    // 2. Create an example movie for development
-//    static var localMovie: Movie {
-//        localMovies[0]
-//    }
+extension Media {
+    
+    // 1. Decode movie_list.json for development
+    static var localMovies: [Media] {
+        let response: MediaResponse = Bundle.main.decode(filename: "movie_list")
+        return response.results
+    }
+    
+    // 2. Create an example movie for development
+    static var localMovie: Media {
+        localMovies[0]
+    }
+    
+    static var localTV: Media {
+        let tv: Media = Bundle.main.decode(filename: "tv_info")
+        return tv
+    }
     
 //    // 3. Decode movie_credits.json for development
 //    static var localCredits: [MovieCast] {
@@ -63,4 +68,4 @@ extension Bundle {
 //        let response: MovieSimilarResponse = Bundle.main.decode(filename: "movie_similar")
 //        return response.results
 //    }
-//}
+}

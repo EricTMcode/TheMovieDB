@@ -49,6 +49,18 @@ struct Media: Codable, Hashable, Identifiable {
         return formatter
     }()
     
+    var contentTitle: String {
+        title ?? name!
+    }
+    
+    var movieTitle: String {
+        title ?? "n/a"
+    }
+    
+    var TVTitle: String {
+        name ?? "n/a"
+    }
+    
     var posterURL: URL {
         return URL(string: "\(Constants.imgUrl)\(posterPath ?? "")")!
     }
