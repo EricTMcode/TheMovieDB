@@ -24,6 +24,8 @@
 		0741805F2ADD764900D25B8C /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0741805E2ADD764900D25B8C /* MovieDetailView.swift */; };
 		074180612ADD765D00D25B8C /* MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074180602ADD765D00D25B8C /* MovieDetailViewModel.swift */; };
 		074180642ADD778900D25B8C /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074180632ADD778900D25B8C /* ContentDetailView.swift */; };
+		074180662ADD7D3700D25B8C /* TVDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074180652ADD7D3700D25B8C /* TVDetailView.swift */; };
+		074180682ADD7D4300D25B8C /* TVDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074180672ADD7D4300D25B8C /* TVDetailViewModel.swift */; };
 		0786D2BD2A5448E9009CABC0 /* GeometryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786D2BC2A5448E9009CABC0 /* GeometryHelper.swift */; };
 		0786D2C32A55905E009CABC0 /* MediaDetailTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786D2C22A55905E009CABC0 /* MediaDetailTitle.swift */; };
 		07A8B84A2A4C663200436696 /* TheMovieDBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8B8492A4C663200436696 /* TheMovieDBApp.swift */; };
@@ -61,6 +63,8 @@
 		0741805E2ADD764900D25B8C /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		074180602ADD765D00D25B8C /* MovieDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModel.swift; sourceTree = "<group>"; };
 		074180632ADD778900D25B8C /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
+		074180652ADD7D3700D25B8C /* TVDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDetailView.swift; sourceTree = "<group>"; };
+		074180672ADD7D4300D25B8C /* TVDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDetailViewModel.swift; sourceTree = "<group>"; };
 		0786D2BC2A5448E9009CABC0 /* GeometryHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryHelper.swift; sourceTree = "<group>"; };
 		0786D2C22A55905E009CABC0 /* MediaDetailTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDetailTitle.swift; sourceTree = "<group>"; };
 		07A8B8462A4C663200436696 /* TheMovieDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheMovieDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				0741804A2ADC127700D25B8C /* TVListViewModel.swift */,
+				074180672ADD7D4300D25B8C /* TVDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -115,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				07A8B88F2A504C0600436696 /* TVListView.swift */,
+				074180652ADD7D3700D25B8C /* TVDetailView.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -383,6 +389,7 @@
 				0741803C2ADC0E6900D25B8C /* MovieListView.swift in Sources */,
 				074180552ADC191C00D25B8C /* MediaPosterCarouselView.swift in Sources */,
 				0741804B2ADC127700D25B8C /* TVListViewModel.swift in Sources */,
+				074180662ADD7D3700D25B8C /* TVDetailView.swift in Sources */,
 				07A8B8942A504C5B00436696 /* SearchView.swift in Sources */,
 				074180432ADC102B00D25B8C /* Language.swift in Sources */,
 				074180402ADC100500D25B8C /* Endpoint.swift in Sources */,
@@ -393,6 +400,7 @@
 				0741804E2ADC157700D25B8C /* RemoteImage.swift in Sources */,
 				0786D2BD2A5448E9009CABC0 /* GeometryHelper.swift in Sources */,
 				07A8B8922A504C3D00436696 /* FavoritesView.swift in Sources */,
+				074180682ADD7D4300D25B8C /* TVDetailViewModel.swift in Sources */,
 				07A8B8902A504C0600436696 /* TVListView.swift in Sources */,
 				074180512ADC15B700D25B8C /* MediaPosterCard.swift in Sources */,
 				074180472ADC114200D25B8C /* MovieListViewModel.swift in Sources */,

@@ -24,7 +24,7 @@ struct ContentDetailView: View {
                         
                         ContentDetailTitleView
                     }
-                    
+                    .offset(x: 0, y: GeometryHelper.getOffsetForHeaderImage(geo))
                 }
                 .frame(height: UIScreen.main.bounds.height * 0.5)
                 

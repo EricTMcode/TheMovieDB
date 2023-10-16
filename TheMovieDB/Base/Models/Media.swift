@@ -122,7 +122,7 @@ struct Media: Codable, Hashable, Identifiable {
         """
         Movie Recommendation
         
-        \(title)
+        \(contentTitle)
         ★ \(voteAverageText) - \(durationText) - \(yearText)
         """
     }

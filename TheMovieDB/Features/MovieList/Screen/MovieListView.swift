@@ -65,6 +65,9 @@ struct MovieListView: View {
                     }
                 }
             }
+            .navigationDestination(for: Media.self) { movie in
+                MovieDetailView(id: movie.id)
+            }
         }
     }
 }
