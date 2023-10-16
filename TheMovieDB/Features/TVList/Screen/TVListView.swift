@@ -59,6 +59,9 @@ struct TVListView: View {
                     }
                 }
             }
+            .navigationDestination(for: Media.self) { tv in
+                TVDetailView(id: tv.id)
+            }
         }
     }
 }
