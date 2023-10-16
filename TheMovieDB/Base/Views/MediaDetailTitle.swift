@@ -1,5 +1,5 @@
 //
-//  TextViews.swift
+//  MediaDetailTitle.swift
 //  TheMovieDB
 //
 //  Created by Eric on 05/07/2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MovieDetailTitle: View {
+struct MediaDetailTitle: View {
     var text: String
     
     var body: some View {
@@ -19,6 +19,6 @@ struct MovieDetailTitle: View {
 
 struct MovieDetailTitle_Previews: PreviewProvider {
     static var previews: some View {
-        MovieDetailTitle(text: "Hello")
+        MediaDetailTitle(text: "Hello")
     }
 }

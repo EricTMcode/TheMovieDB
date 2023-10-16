@@ -15,6 +15,7 @@ struct TVListView: View {
             ScrollView(showsIndicators: false) {
                 VStack(alignment: .leading, spacing: 10) {
                     MediaBackdropCarouselView(content: vm.airingToday)
+                        .padding(.bottom, 10)
                     MediaPosterCarouselView(title: "Top Rated", content: vm.tvTopRated)
                     MediaPosterCarouselView(title: "On The Air", content: vm.onTheAir)
                     MediaPosterCarouselView(title: "Popular", content: vm.popular)
@@ -54,6 +55,7 @@ struct TVListView: View {
                         }
                     } label: {
                         Image(systemName: "arrow.counterclockwise")
+                            .foregroundStyle(.orange)
                     }
                 }
             }

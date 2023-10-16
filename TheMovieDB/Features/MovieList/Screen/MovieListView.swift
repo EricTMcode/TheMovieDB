@@ -10,12 +10,12 @@ import SwiftUI
 struct MovieListView: View {
     @StateObject var vm = MovieListViewModel()
     
-    
     var body: some View {
         NavigationStack {
             ScrollView(showsIndicators: false) {
                 VStack(alignment: .leading, spacing: 10) {
                     MediaBackdropCarouselView(content: vm.nowPlaying)
+                        .padding(.bottom, 10)
                     MediaPosterCarouselView(title: "Movie of the day", content: vm.nowPlaying)
                     MediaPosterCarouselView(title: "Recently Added", content: vm.upcoming)
                     MediaPosterCarouselView(title: "Top Rated Movie", content: vm.topRated)
@@ -55,6 +55,7 @@ struct MovieListView: View {
                         }
                     } label: {
                         Image(systemName: "arrow.counterclockwise")
+                            .foregroundStyle(.orange)
                     }
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {

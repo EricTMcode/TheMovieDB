@@ -34,7 +34,6 @@ struct ContentView: View {
             tabBarAppearance.configureWithOpaqueBackground()
             UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
         }
-        .tint(.orange)
     }
 }
 
